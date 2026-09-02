@@ -2,5 +2,6 @@ services:
   - type: web
     name: rori-hr-portal
     env: python
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
